@@ -356,6 +356,17 @@ properties:
         4: high
     icon: mdi:volume-low
     hide: false
+  - property: Feedback_volumen_setting_status
+    unavailable: 0
+    select:
+      options:
+        1: mute
+        2: low
+        3: mid
+        4: high
+      command:
+        name: Feedback_volume_settings
+        adjust: 1
   - property: Fill_salt
     binary_sensor:
       device_class: problem
