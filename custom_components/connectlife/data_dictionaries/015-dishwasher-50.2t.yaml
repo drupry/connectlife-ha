@@ -356,7 +356,6 @@ properties:
         4: high
     icon: mdi:volume-low
     hide: false
-  - property: Feedback_volumen_setting_status
     unavailable: 0
     select:
       options:
@@ -441,6 +440,20 @@ properties:
         5: "3"
         6: "4"
         7: "5"
+    unavailable: 0
+    select:
+      options:
+        0: "-2"
+        1: "-1"
+        2: "0"
+        3: "1"
+        4: "2"
+        5: "3"
+        6: "4"
+        7: "5"
+      command:
+        name: Rinse_aid_setting
+        adjust: 1
     icon: mdi:white-balance-sunny
     hide: false
   - property: Selected_program_auto_door_open_function
@@ -464,6 +477,20 @@ properties:
         6: night
         7: clean
     icon: mdi:clipboard-list
+    unavailable: 0
+    select:
+      options:
+        0: auto
+        1: eco
+        2: one_hour
+        3: intensive
+        4: glass
+        5: hygiene
+        6: night
+        7: clean
+      command:
+        name: Rinse_aid_setting
+        adjust: 1
   - property: Selected_program_mode
     sensor:
       device_class: enum
@@ -473,6 +500,17 @@ properties:
         2: normal
         3: "3"
         4: fast
+    unavailable: 0
+    select:
+      options:
+        0: "0"
+        1: "1"
+        2: normal
+        3: "3"
+        4: fast
+      command:
+        name: Selected_program_mode
+        adjust: 1
     icon: mdi:cube-outline
     hide: false
   - property: Selected_program_storage_function
@@ -560,6 +598,22 @@ properties:
         9: "7.1-8.8 mmol/L"
         10: "8.9+ mmol/L"
     icon: mdi:water-opacity
+    unavailable: 0
+    select:
+      options:
+        1: "0.0-0.9 mmol/L"
+        2: "1.0-1.4 mmol/L"
+        3: "1.5-2.0 mmol/L"
+        4: "2.1-2.5 mmol/L"
+        5: "2.6-3.4 mmol/L"
+        6: "3.5-4.3 mmol/L"
+        7: "4.4-5.2 mmol/L"
+        8: "5.3-7.0 mmol/L"
+        9: "7.1-8.8 mmol/L"
+        10: "8.9+ mmol/L"
+      command:
+        name: Water_hardness_setting
+        adjust: 1
   - property: Water_inlet_setting_status
     sensor:
       read_only: true
