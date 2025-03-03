@@ -99,6 +99,9 @@ properties:
     switch:
       "off": 1
       "on": 2
+      command:
+        name: Child_lock_cmd
+        adjust: 1  
   - property: Child_lock_setting_status
     sensor:
       read_only: false
@@ -366,6 +369,9 @@ properties:
         2: low
         3: mid
         4: high
+      command: 
+        name: feedback_volume_settings_cmd
+        adjust: 1
   - property: Fill_salt
     binary_sensor:
       device_class: problem
