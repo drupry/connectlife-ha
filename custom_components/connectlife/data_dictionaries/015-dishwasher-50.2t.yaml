@@ -370,7 +370,7 @@ properties:
         3: mid
         4: high
       command: 
-        name: feedback_volume_setting
+        name: feedback_volume_setting_cmd
         adjust: 1
   - property: Fill_salt
     binary_sensor:
