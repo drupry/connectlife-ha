@@ -7,11 +7,6 @@ properties:
     binary_sensor:
       device_class: problem
     icon: mdi:dishwasher-alert
-    sensor:
-      device_class: enum
-      options:
-        1: no need refill
-        2: refill needed
   - property: Alarm_clean_the_filters
     entity_category: diagnostic
     binary_sensor:
@@ -89,7 +84,10 @@ properties:
   - property: Auto_dose_refill
     sensor:
       read_only: true
-    hide: true
+      device_class: enum
+      options:
+        1: no need refill
+        2: refill needed
   - property: Auto_dose_setting_status
     unavailable: 0
     switch:
