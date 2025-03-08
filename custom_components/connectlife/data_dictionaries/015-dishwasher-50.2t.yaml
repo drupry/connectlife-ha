@@ -7,7 +7,11 @@ properties:
     binary_sensor:
       device_class: problem
     icon: mdi:dishwasher-alert
-    hide: true
+    sensor:
+      device_class: enum
+      options:
+        1: no need refill
+        2: refill needed
   - property: Alarm_clean_the_filters
     entity_category: diagnostic
     binary_sensor:
