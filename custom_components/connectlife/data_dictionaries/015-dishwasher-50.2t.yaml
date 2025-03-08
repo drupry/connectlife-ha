@@ -85,9 +85,10 @@ properties:
     sensor:
       device_class: enum
       options:
-        0: ??
-        1: no_refill
+        1: no_refill_needed
         2: refill_needed
+    hide: false
+    icon: mdi:dishwasher-alert
   - property: Auto_dose_setting_status
     unavailable: 0
     switch:
@@ -102,7 +103,7 @@ properties:
       "off": 1
       "on": 2
       command:
-        name: Child_lock_cmd
+        name: Child_lock
         adjust: 1  
   - property: Child_lock_setting_status
     sensor:
