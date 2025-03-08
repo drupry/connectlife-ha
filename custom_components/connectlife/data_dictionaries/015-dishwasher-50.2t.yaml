@@ -83,11 +83,11 @@ properties:
         adjust: 1
   - property: Auto_dose_refill
     sensor:
-      read_only: true
       device_class: enum
       options:
-        1: no need refill
-        2: refill needed
+        0: ??
+        1: no_refill
+        2: refill_needed
   - property: Auto_dose_setting_status
     unavailable: 0
     switch:
