@@ -356,17 +356,11 @@ properties:
     icon: mdi:information
     hide: true
   - property: Feedback_volumen_setting_status
-    sensor:
-      device_class: enum
-      options:
-        1: mute
-        2: low
-        3: mid
-        4: high
     icon: mdi:volume-low
     hide: false
     unavailable: 0
     select:
+      device_class: enum
       options:
         1: mute
         2: low
